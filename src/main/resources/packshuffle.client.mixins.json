@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "xyz.ivyig.packshuffle.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refMap": "packshuffle.refmap.json",
+  "client": [
+    "PackEntryMixin",
+    "PackSelectionScreenMixin",
+    "ConnectScreenMixin",
+    "MinecraftClientMixin",
+    "ResourcePackManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
