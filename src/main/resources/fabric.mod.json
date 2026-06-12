@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "packshuffle",
+  "version": "${version}",
+  "name": "Pack Shuffle",
+  "description": "allows you to favorite texture packs and shuffle them randomly either upon game launch or upon joining any server",
+  "authors": [
+    "ivyig"
+  ],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/packshuffle/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "xyz.ivyig.packshuffle.client.PackShuffleClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "packshuffle.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
